@@ -1,10 +1,17 @@
-# AcademyProject
+# Final Project, Academy 3.0 - Andrea Spinelli
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.7.
+This project was generated:<br> 
+- Front End, with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.7;
+- Back End, with Spring Tool Suite version 4-4.23.1.
 
 ## Development server
+### Front End:
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+
+### Back End:
+
+Run the project as Spring Boot App. Navigate to `http://localhost:8080/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
