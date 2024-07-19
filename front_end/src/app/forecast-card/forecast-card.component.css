@@ -1,0 +1,39 @@
+
+div.card{
+  background: none;
+  border: none;
+  transition: 0.5s;
+}
+
+div.card:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+div.card-body{
+  margin: 1rem;
+  border-radius: 25px;
+  background-color: white;
+  border: 1px solid #405D72;
+}
+
+h5.card-title{
+  color: black;
+  font-weight: bold;
+}
+
+p.col-md-6{
+  font-style: italic;
+}
+
+a.btn {
+  background-color: #405D72;
+  border-color: white;
+  color: white;
+}
+
+a.btn:hover {
+  background-color: white;
+  border-color: #405D72;
+  color: #405D72;
+}

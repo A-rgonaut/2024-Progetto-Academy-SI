@@ -1,0 +1,10 @@
+
+#form{
+  background-color: #FFF8F3;
+  color: #405D72;
+}
+
+#form div.container-fluid{
+  border-top: 1px solid #405D72;
+  padding: 5%;
+}

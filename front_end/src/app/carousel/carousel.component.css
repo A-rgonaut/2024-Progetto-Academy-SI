@@ -1,0 +1,68 @@
+
+#carousel div{
+  color: white;
+}
+
+#carousel button.carousel-control-prev{
+  width: 10%;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(30, 30, 30, 0.8) 100%);
+}
+
+#carousel button.carousel-control-next{
+  width: 10%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(30, 30, 30, 0.8) 100%);
+}
+
+#get-started{
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  background-color: #FFE877;
+  padding: 5vmin;
+  z-index: 1;
+}
+
+#get-started h1{
+  font-size: 5vmin;
+  color: #2B2D30;
+}
+
+#get-started h1 span{
+  font-weight: bold;
+}
+
+#get-started h5{
+  font-size: 3vmin;
+  color: #2B2D30;
+}
+
+#get-started a{
+  font-size: 2vmin;
+  margin: 1vmin;
+  margin-top: 1vmin;
+  width: 40%;
+}
+
+#started{
+  background-color: #2B2D30;
+  border-color: #FFE877;
+  color: #FFE877;
+}
+
+#started:hover{
+  background-color: #FFE877;
+  border-color: #2B2D30;
+  color: #2B2D30;
+}
+
+#signup{
+  background-color: #FFE877;
+  border-color: #2B2D30;
+  color: #2B2D30;
+}
+
+#signup:hover{
+  background-color: #2B2D30;
+  border-color: #2B2D30;
+  color: #FFE877;
+}

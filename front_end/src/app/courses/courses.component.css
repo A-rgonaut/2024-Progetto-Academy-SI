@@ -1,0 +1,39 @@
+
+#courses{
+  background-color: #2B2D30;
+}
+
+#courses div.container-fluid{
+  padding: 5%;
+}
+
+#carousel-course div.carousel-inner{
+  padding: 5%;
+  box-shadow: inset 0 5px 5px -5px rgba(0,0,0,0.2),
+              inset 0 -5px 5px -5px rgba(0,0,0,0.2);
+}
+
+#carousel-course button.carousel-control-prev{
+  width: 5%;
+}
+
+#carousel-course button.carousel-control-next{
+  width: 5%;
+}
+
+#carousel-course button{
+  span{
+    filter:invert(1);
+    transition: 0.5s;
+  }
+}
+
+#carousel-course button:hover{
+    span{
+    transform: scale(1.5);
+    transition: 0.5s;
+  }
+}
+
+
+

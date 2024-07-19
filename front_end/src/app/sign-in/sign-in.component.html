@@ -1,0 +1,39 @@
+
+<div class="background w-100">
+
+  <div class="row">
+
+    <div class="col-md-7">
+      <img src="signin_pic.png" alt="..." width="100%" height="auto">
+    </div>
+
+    <div class="col-md-1"></div>
+
+    <div class="col-md-4 rounded-4 text-center">
+      <form class="row g-3 needs-validation" (ngSubmit)="submit(f)" #f=ngForm>
+
+        <h4>{{title}}</h4>
+
+        <div class="form-floating col-md-12">
+          <input [(ngModel)]="this.signInRequest.email" name="email" type="email" class="form-control" id="signin_email" placeholder="Email" #email="ngModel" email required>
+          <label for="signin_email" class="form-label" *ngIf="email.valid || email.pristine">Email</label>
+          <label for="signin_email" class="form-label invalid" *ngIf="!email.valid && email.dirty">Insert a valid Email *</label>
+        </div>
+
+        <div class="form-floating col-md-12">
+          <input [(ngModel)]="this.signInRequest.password" name="password" type="password" class="form-control" id="signin_password" placeholder="Password" #password="ngModel" minlength="5" required>
+          <label for="signin_password" class="form-label" *ngIf="password.valid || password.pristine">Password</label>
+          <label for="signin_password" class="form-label invalid" *ngIf="!password.valid && password.dirty">Insert a valid Password *</label>
+        </div>
+
+        <div class="col-12">
+          <button class="btn btn-dark w-25 rounded-pill" type="submit" [disabled]="!f.valid">Sign in</button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+</div>
+
+<app-footer></app-footer>

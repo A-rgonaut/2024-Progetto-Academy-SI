@@ -1,0 +1,41 @@
+
+<form class="row g-3 needs-validation" (ngSubmit)="submit(f)" #f=ngForm>
+
+  <h4>{{title}}</h4>
+
+  <div class="form-floating col-md-6">
+    <input [(ngModel)]="this.addCourseRequest.name" name="name" type="text" class="form-control" id="name_id" placeholder="Course name" #name="ngModel" minlength="3" required>
+    <label for="name_id" class="form-label" *ngIf="name.valid || name.pristine">Course name</label>
+    <label for="name_id" class="form-label invalid" *ngIf="!name.valid && name.dirty">Insert a valid Course name *</label>
+  </div>
+
+  <div class="form-floating col-md-6">
+    <input [(ngModel)]="this.addCourseRequest.descriptionSumm" name="description_summ" type="text" class="form-control" id="summary_id" placeholder="Description summary" #summ="ngModel" minlength="10" required>
+    <label for="summary_id" class="form-label" *ngIf="summ.valid || summ.pristine">Description summary</label>
+    <label for="summary_id" class="form-label invalid" *ngIf="!summ.valid && summ.dirty">Insert a summary description *</label>
+  </div>
+
+  <div class="form-floating col-md-6">
+    <textarea [(ngModel)]="this.addCourseRequest.descriptionFull" name="description_full" class="form-control" id="full_id" placeholder="Description full" #full="ngModel" minlength="3" required></textarea>
+    <label for="full_id" class="form-label" *ngIf="full.valid || full.pristine">Description full</label>
+    <label for="full_id" class="form-label invalid" *ngIf="!full.valid && full.dirty">Insert a full description *</label>
+  </div>
+
+  <div class="form-floating col-md-2">
+    <input [(ngModel)]="this.addCourseRequest.duration" name="duration" type="number" class="form-control" id="duration_id" placeholder="Duration" #duration="ngModel" required>
+    <label for="duration_id" class="form-label" *ngIf="duration.valid || duration.pristine">Duration</label>
+    <label for="duration_id" class="form-label invalid" *ngIf="!duration.valid && duration.dirty">Insert a duration *</label>
+  </div>
+
+  <div class="form-floating col-md-4">
+    <select [(ngModel)]="this.addCourseRequest.category" name="category" class="form-select" aria-label="Default select example" id="category_id" #category="ngModel" required>
+      <option *ngFor="let item of categories" [value]="item?.id">{{item?.name}}</option>
+    </select>
+    <label for="category_id" class="form-label" *ngIf="category.valid || category.pristine">Category</label>
+    <label for="category_id" class="form-label invalid" *ngIf="!category.valid && category.dirty">Insert category *</label>
+  </div>
+
+  <div class="col-12 text-end">
+    <button class="btn btn-dark rounded-pill" type="submit" [disabled]="!f.valid">Add</button>
+  </div>
+</form>

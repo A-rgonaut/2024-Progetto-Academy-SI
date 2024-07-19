@@ -1,0 +1,51 @@
+
+div.card{
+  background: none;
+  border: none;
+  color: #405D72;
+  transition: 0.5s;
+}
+
+div.card:hover{
+  transform: scale(1.01);
+  transition: 0.5s;
+}
+
+div.card-body{
+  background-color: white;
+  border: 1px solid #405D72;
+}
+
+h5.card-title{
+  font-weight: bold;
+}
+
+p.col-md-6{
+  font-style: italic;
+}
+
+a.btn {
+  background-color: #405D72;
+  border-color: white;
+  color: white;
+}
+
+a.btn:hover {
+  background-color: white;
+  border-color: #405D72;
+  color: #405D72;
+}
+
+.ratings{
+  margin: 5%;
+}
+
+.ratings i{
+
+  color:#cecece;
+  font-size:16px;
+}
+
+.rating-color{
+  color:#fbc634 !important;
+}

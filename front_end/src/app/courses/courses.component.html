@@ -1,0 +1,46 @@
+
+<div id="courses" class="container-fluid text-center">
+  <div class="container-fluid w-75">
+    <h4 class="subsection">Weather forecast</h4>
+
+    <p>
+      Our service provides accurate, up-to-date weather forecasts with interactive maps
+      and real-time radar, helping you plan your daily activities and trips effectively.
+    </p>
+
+
+
+    <div id="carousel-course" class="carousel slide">
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item" *ngFor="let group of grouped_courses; let i = index" [ngClass]="{'active' : i === 0}">
+          <div class="row">
+            <!--
+            <app-course *ngFor="let item of group" [data]="item" [ngClass]="'col-md-3'"></app-course>
+            -->
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-course" data-bs-slide="prev">
+        <span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+            <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+          </svg>
+        </span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel-course" data-bs-slide="next">
+        <span aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+          </svg>
+        </span>
+      </button>
+
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,19 @@
+
+<form class="row g-3 needs-validation" novalidate>
+
+  <h4>{{title}}</h4>
+
+  <div class="form-floating col-md-6">
+    <input [(ngModel)]="this.subscribeCourseRequest.idUser" name="name" type="number" class="form-control" id="user_id" placeholder="Name course" value="{{userId}}">
+    <label for="user_id">{{userId}}</label>
+  </div>
+
+  <div class="form-floating col-md-6">
+    <input [(ngModel)]="this.subscribeCourseRequest.idCourse" name="description_summ" type="number" class="form-control" id="course_id" placeholder="Description summary" required>
+    <label for="course_id">Course</label>
+  </div>
+
+  <div class="col-12 text-end">
+    <button (click)="submit()" class="btn btn-dark rounded-pill" type="submit">Subscribe</button>
+  </div>
+</form>

@@ -1,0 +1,30 @@
+
+#navbar{
+  padding-left: 2%;
+  padding-right: 2%;
+  transition: 0.5s;
+}
+
+#navbar b{
+  color: white;
+}
+
+#navbar .navbar-brand{
+  padding-left: 1rem;
+}
+
+.scroll{
+  background-color: #2B2D30;
+  border-bottom: 1px solid white;
+  transform: scale(1.02);
+  transition: 0.5s;
+}
+
+.nav-item a{
+  color: white;
+  font-weight: bold;
+}
+
+.nav-item a:hover{
+  color: #FFF8F3;
+}

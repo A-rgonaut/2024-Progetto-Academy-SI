@@ -1,0 +1,10 @@
+
+.subsection{
+  text-transform: uppercase;
+  letter-spacing: 0.6em;
+  font-weight: bold;
+}
+
+.subsection ~ p{
+  font-style: italic;
+}

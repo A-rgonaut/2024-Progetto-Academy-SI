@@ -1,0 +1,19 @@
+
+<div class="card">
+  <div class="card-body">
+    <h3 class="card-title">{{item.period}}</h3>
+    <h5 class="card-title">{{item.location}}</h5>
+
+    <div class="row">
+      <p class="col-md-6">{{item.maxTemperature}} C&deg;</p>
+      <p class="col-md-6">{{item.minTemperature}} C&deg;</p>
+    </div>
+
+    <div class="row">
+      <p class="col-md-6">{{item.windDirection}} &deg;</p>
+      <p class="col-md-6">{{item.windSpeed}} m/s</p>
+    </div>
+
+    <a *ngIf="localStorage.getItem('token')" class="btn rounded-pill" href="">Save</a>
+  </div>
+</div>

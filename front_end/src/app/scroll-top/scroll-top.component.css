@@ -1,0 +1,18 @@
+
+#scroll-top{
+  svg{
+    transition: 0.25s;
+  }
+  padding: 2%;
+  transition: 0.25s;
+}
+
+#scroll-top:hover{
+  svg{
+    transform: scale(1.2);
+    transition: 0.5s;
+  }
+  background-color: #141414;
+  opacity: 0.75;
+  transition: 0.5s;
+}

@@ -1,0 +1,31 @@
+
+<div id="courses" class="container-fluid text-center">
+  <div class="container-fluid w-75">
+    <h4 class="subsection">Weather forecast</h4>
+
+    <p>
+      Our service provides accurate, up-to-date weather forecasts with interactive maps
+      and real-time radar, helping you plan your daily activities and trips effectively.
+    </p>
+
+    <div class="row">
+      <div class="form-model col-md-4">
+        <input [(ngModel)]="location" type="text" class="form-control rounded-pill" placeholder="Location" minlength="3" required>
+      </div>
+      <div class="form-model col-md-4">
+        <input type="submit" (click)="submit()">
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <h3>Today</h3>
+      <app-forecast-card [item]="today" [ngClass]="'col-md-4'"></app-forecast-card>
+    </div>
+
+    <div class="row">
+      <h3>Next week</h3>
+      <app-forecast-card *ngFor="let item of data" [item]="item" [ngClass]="'col-md-4'"></app-forecast-card>
+    </div>
+
+  </div>
+</div>

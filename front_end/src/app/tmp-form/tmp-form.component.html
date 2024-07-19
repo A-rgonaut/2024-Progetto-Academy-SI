@@ -1,0 +1,33 @@
+
+<div id="form" class="container-fluid text-center">
+  <div class="container-fluid w-75">
+    <h4 class="subsection">Temp forms for project</h4>
+
+    <p>Login, register or add a course</p>
+
+    <div class="row">
+
+      <div class="col-md-6">
+        <!--
+        <app-sign-in *ngIf="!this.isLogged" (userNameEvent)="onElementAdded($event)" (userId)="getId($event)"></app-sign-in>
+        -->
+      </div>
+
+      <div class="col-md-6">
+        <!--
+        <app-sign-up *ngIf="!this.isLogged"></app-sign-up>
+        -->
+      </div>
+
+    </div>
+
+    <div class="row">
+      <app-add-course *ngIf="role === 1"></app-add-course>
+    </div>
+
+    <div class="row">
+      <app-subscribe *ngIf="this.isLogged" [userId]="user"></app-subscribe>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,22 @@
+
+<div class="row">
+  <div class="card">
+    <img src="/{{data.path}}.png" class="card-img-top" alt="..." >
+    <div class="card-body">
+      <h5 class="card-title">{{data.name}}</h5>
+      <p class="card-text">{{data.descriptionSumm}}</p>
+
+
+      <div class="ratings">
+        <i class="fa fa-star" *ngFor="let star of stars; let i = index" [ngClass]="{'rating-color' : i < data.rate}"></i>
+      </div>
+
+      <div class="row">
+        <p class="col-md-6">{{data.duration}} h</p>
+        <p class="col-md-6">Price €</p>
+      </div>
+
+      <a class="btn rounded-pill" href="">Learn more</a>
+    </div>
+  </div>
+</div>

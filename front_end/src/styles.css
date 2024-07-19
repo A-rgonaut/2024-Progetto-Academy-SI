@@ -1,0 +1,17 @@
+
+body{
+  background-color: #1F1F1F;
+  color: white;
+  overflow-x: hidden;
+  font-family: 'Cambria';
+}
+
+.subsection{
+  text-transform: uppercase;
+  letter-spacing: 0.6em;
+  font-weight: bold;
+}
+
+.subsection ~ p{
+  font-style: italic;
+}
