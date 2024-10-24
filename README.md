@@ -1,4 +1,12 @@
-# Final Project, Academy 3.0 - Andrea Spinelli
+# 2024-Progetto-Academy-SI
+
+## Info:
+
+Sistemi Informativi
+
+Academy 3.0 2023/2024 
+
+Edit by: Andrea Spinelli
 
 This project was generated:<br> 
 - Front End, with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.7;
